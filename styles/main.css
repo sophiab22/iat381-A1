@@ -1,0 +1,245 @@
+
+/*--------------- MAIN.CSS STYLESHEET ----------------------------*/
+
+/*------------------------------------------------*/
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-height: 568px) and (max-height: 640px) {
+  section.cent {
+  padding: 1% 0% 14% 0% !important;
+  }
+
+  section.cent-deg {
+    padding: 39% 0% 10% 0% !important;
+  }
+
+  section.cent-main {
+    padding: 20% 0% 10% 0% !important;
+  }
+}
+
+/*------------------------------------------------*/
+
+body {
+  background-color: #eee;
+  font-family: "century gothic", helvetica, serif !important;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.jumbotron .btn {
+  padding: 1em;
+}
+
+
+/*-------------- Header ---------------------------*/
+.header{
+  background-color: #C0392B; 
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1em;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  color: #fff;
+}
+
+h3 {
+  margin: 0em;
+}
+
+.header-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0.35em;
+  color: #fff;
+  padding: 0.35em;
+}
+
+/*------------------- Navigation Styling. (Header & Footer) ----------------------*/
+
+.nav-spacing {
+  padding: 0em 0.45em 0em 0em;
+}
+
+.tab {
+  background-color: #C0392B;
+  color: #fff;
+  line-height: 3em;
+  padding: 0em 1em 0em 1em;
+  border: 0;
+}
+
+.footer {
+  background-color: #C0392B;
+  position:fixed; 
+  z-index:2;
+  bottom:0; left:0;
+  width:100%;
+  height:48px;
+  padding:0;
+}
+
+.breadth-p {
+  padding-top: 1em;
+  padding-bottom: 0.19em;
+  line-height: 2.35em !important;
+}
+
+.active {
+  background-color: #eee;
+  color: #696969;
+}
+
+/*---------------- Course buttons styles -------------------------*/
+
+ul.course-btn {
+  list-style: none;
+  padding: 0em;
+  margin-top: 3em;
+  border: 1px solid #ddd;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+  -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+  box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+  text-shadow: #ffffff 0 1px 0;
+  color: #000000;
+  font-size: 11px;
+  font-family: helvetica, serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.course-btn:hover {
+   text-shadow: #ffffff 0 1px 0;
+   background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+   background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+   background: -moz-linear-gradient(top, #ffffff, #ffffff);
+   background: -ms-linear-gradient(top, #ffffff, #ffffff);
+   background: -o-linear-gradient(top, #ffffff, #ffffff);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+   color: #000000;
+   }
+
+.course-btn:active {
+   text-shadow: #ffffff 0 1px 0;
+   background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+   background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+   background: -moz-linear-gradient(top, #ffffff, #ffffff);
+   background: -ms-linear-gradient(top, #ffffff, #ffffff);
+   background: -o-linear-gradient(top, #ffffff, #ffffff);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+   color: #000000;
+   }
+
+
+li.iatbtn {
+  border-bottom: 1px solid #a7a7a7;
+  padding-top: 0.1em;
+}
+
+
+
+/*--------------'Results' Page Styles---------------------------*/
+
+article{
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  padding: 0% 0% 0% 5%;
+}
+
+
+article.degree {
+  background-color: #D2D2D2;
+}
+
+article.iat {
+  background-color: #ddd;
+}
+article.breadth {
+  background-color: #D2D2D2;
+}
+
+/* Styled the course list results */
+.res-ulcourse {
+  list-style-type: none;
+  font-size: 16px !important;
+  line-height: 1.5em;
+  text-align: left !important;
+  padding: 0em;
+}
+
+/*-------------- Button Animations ---------------------------*/
+
+.app-qb-active, .app-qb-active:hover {
+  background-color: #dcdbdb;
+  color: #797979;
+}
+
+.app-qb {
+  transition: all 0.4s linear;
+}
+
+
+/*-----------------------------------------*/
+
+select, input {
+  padding: 0.5em;
+  width: 100%;
+  background-color: #fff;
+  color: #888;
+  border: none;
+  outline: none;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/*--------------- Breadth Sliders Styles -------------------------*/
+/*Reference: http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html*/
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: #696969;
+    border-radius: 2em;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #C0392B;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #eee;
+}

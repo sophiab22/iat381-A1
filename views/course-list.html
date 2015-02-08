@@ -1,0 +1,44 @@
+<!--COURSE-LIST.HTML --> 
+
+
+<div class="jumbotron">
+	<div class="row">
+		<section class="cent">
+			<div class="col-md-2">
+				<h2>Select IAT Courses</h2><br>
+
+				<!-- User can filter the coruses. Search & Select feature  -->
+				<input ng-model="query" placeholder="Search"><br><br>
+				<select ng-model="orderProp">
+					<option value="name">Course Number</option>
+					<option value="concentration">Concentration</option>
+				</select>
+			</div>
+
+			<!-- Display courses -->
+			<div>
+				<ul class="courses course-btn">
+					<li class="iatbtn app-qb" ng-repeat="course in courses | filter:query | orderBy:orderProp" 
+						ng-click="buttonAction($event, course, iatSelected)">
+						<div class="col-md-2">
+							<p class="ng-binding">
+								<strong>{{course.name}}</strong><br>
+								{{course.snippet}} 
+								{{course.concentration}}
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</div>
+
+<!-- Fixed footer. -->
+  <div class="footer">
+    <ul class="nav">
+      <li ><a class="tab" ng-href="#/degree">Degree</a></li>
+      <li><a class="tab active" ng-href="#/iat">IAT</a></li>
+      <li><a class="tab" ng-href="#/breadth">Breadth</a></li>
+    </ul>
+  </div>

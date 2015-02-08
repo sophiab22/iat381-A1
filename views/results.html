@@ -1,0 +1,45 @@
+<!--RESULTS.HTML --> 
+
+<div class="jumbotron">
+<section class="cent">
+	<h2>Results</h2>
+
+		<!-- Display Degree Results --> 
+		<article class="degree">
+			<p>
+				<strong>Degree</strong>
+				<p ng-repeat="degree in degreeItems track by $index">
+					{{degree.message}}
+				</p>
+			</p>
+		</article>
+
+		<!-- Display IAT Courses Results --> 
+		<article class="iat">
+			<p>
+				<strong>IAT Courses Taken</strong>
+				<ul class="res-ulcourse">
+					<li ng-repeat="course in courses track by $index">
+						{{course.name}}	
+					</li>
+				</ul>
+			</p>
+		</article>
+
+		<!-- Display Breadth Results --> 
+		<article class="breadth">
+			<p><strong>Breadth Credit Total</strong></p>
+				<p>You currently have <strong>{{result}}</strong> credits. </p>
+		</article>
+
+</section>
+</div> 
+
+<!-- Fixed footer. -->
+  <div class="footer">
+    <ul class="nav">
+      <li ><a class="tab" ng-href="#/degree">Degree</a></li>
+      <li><a class="tab" ng-href="#/iat">IAT</a></li>
+      <li><a class="tab" ng-href="#/breadth">Breadth</a></li>
+    </ul>
+  </div>
